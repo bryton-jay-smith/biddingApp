@@ -1,0 +1,155 @@
+body {
+  font-family: 'Judson', serif;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'Archivo Black', sans-serif;
+ }
+
+.list-group-item {
+  line-height: 2.5;
+}
+header .jumbotron {
+  padding: 2rem;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  border-bottom: 1px #ffffff solid;
+  margin-bottom: 0px;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero-img {
+  color: white;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  url("https://www.indexexchange.com/wp-content/uploads/2019/03/header-bidding-auction-ss-1920_uusz3n.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  opacity: 1.0;
+}
+
+.add-btn {
+  margin-top: 20px;
+}
+
+
+.btn-circle.btn-xl {
+  width: 150px;
+  height: 150px;
+  padding: 10px 10px;
+  font-size: 24px;
+  border-radius: 75px;
+  margin: 10px;
+}
+
+#product-display {
+  margin-top: 30px;
+  border: 1px solid #777777;
+  height: 100%;
+}
+
+.container-header {
+  background: #d9534f;
+  color: #ffffff;
+  border-bottom: 1px solid #777777;
+}
+
+.auth-buttons {
+  margin: 20px 0px 0px 0px;
+  align-content: flex-end;
+}
+
+.product-img {
+  width: 100%;
+}
+
+/* Product Listing */
+
+.itemCard {
+  height: 265px;
+  padding: 10px;
+}       
+
+.itemButtons {
+  border-bottom: 2px dashed grey;
+  padding: 10px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+}
+      
+.smallImage {
+  float: right;
+  height: 250px;
+  width: 300px;
+}
+
+
+.itemContent {
+  background-color: inherit;
+  float: left;
+  height: 240px;
+}
+
+.bid-btn {
+  float: center;
+  width: 150px;
+  border-radius: 5%;
+}
+
+.userId {
+  font-style: italic;
+}
+
+.description {
+  padding-top: 10px;
+}
+
+.currentBid, .auctionEnd, .bid-btn {
+  display: inline;
+}
+
+.currentBid {
+  float: left;
+}
+
+.auctionEnd {
+  float: center;
+}
+
+.bid-btn {
+  float: right;
+}
+
+/* Modals */
+
+.modal-image, .modal-name, .modal-cancel, .modal-submit {
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-image {
+  height: 250px;
+}
+
+.modal-name {
+  text-align: center;
+  width: 100%;
+}
+
+.modal-category {
+   width: 100%;
+}
+
+.modal-submit, .modal-cancel {
+  margin-bottom: 20px;
+}

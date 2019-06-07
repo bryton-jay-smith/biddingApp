@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS bellatrix_db;
+CREATE DATABASE bellatrix_db;

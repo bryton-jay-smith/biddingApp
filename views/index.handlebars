@@ -1,0 +1,79 @@
+<!--Hero image===================================================================================-->
+<div class="jumbotron jumbotron-fluid hero-img">
+  <div class="container inner-container">
+    <h2 class="display-4">Place your bids now!</h2>
+    <p>Create an account, select a product category, <br>and <strong>instantly</strong> start bidding on items up for
+      auction</p>
+  </div>
+</div>
+
+<!--Category buttons===========================================================================-->
+<div class="container" id="category-btns">
+  <div class="row text-center">
+    <a href="/products/antiques#category-btns"><button type="button" class="btn btn-danger btn-circle btn-xl"><i>Antiques</i></button></a>
+    <a href="/products/apparel#category-btns"><button type="button" class="btn btn-danger btn-circle btn-xl"><i>Apparel</i></button></a>
+    <a href="/products/appliances#category-btns"><button type="button" class="btn btn-danger btn-circle btn-xl"><i>Appliances</i></button></a>
+    <a href="/products/electronics#category-btns"><button type="button" class="btn btn-danger btn-circle btn-xl"><i>Electronics</i></button></a>
+    <a href="/products/home-goods#category-btns"><button type="button" class="btn btn-danger btn-circle btn-xl"><i>Home<br>Goods</i></button></a>
+    <a href="/products/jewelery#category-btns"><button type="button" class="btn btn-danger btn-circle btn-xl"><i>Jewelery</i></button></a>
+  </div>
+</div>
+
+<!--Product Display==========================================================================-->
+<div class="container" id="product-display">
+  <div class="row text-center container-header">
+    <div class="col-lg-11">
+      <h1>Place your bids below!!</h1>
+    </div>
+    <div class="col-lg-1">
+      <a href="/add">
+      <input class="btn btn-primary add-btn" type="submit" value="Add" />
+    </a>
+    </div>
+  </div>
+  <div id="display-content">
+
+    {{#each products}}
+      {{> products/products}}
+    {{/each}}
+  </div>
+</div>
+
+
+<!--<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h1>{{msg}}</h1>
+        <h2>This is our Home Page!</h2>
+        <form class="clearfix mb-4" action="POST">
+          <div class="form-group">
+            <label for="example-text">Example Text</label>
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+              placeholder="Enter Example Text">
+          </div>
+          <div class="form-group">
+            <label for="example-description">Example Description</label>
+            <textarea class="form-control" id="example-description" aria-describedby="example-description"
+              placeholder="Enter Example Description"></textarea>
+          </div>
+          <button id="submit" class="btn btn-primary float-right">Submit</button>
+        </form>
+        <h3>Examples:</h3>
+        <ul id="example-list" class="list-group">
+          {{#each examples}}
+          <li data-id="{{this.id}}" class="list-group-item">
+            <a href="example/{{this.id}}">{{this.text}}</a>
+            <button class="btn btn-danger float-right delete">ｘ</button>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.19.2/js/vendor/jquery.ui.widget.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.19.2/js/jquery.iframe-transport.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.19.2/js/jquery.fileupload.min.js"></script>
